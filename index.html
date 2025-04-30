@@ -1,26 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canvas Shooting Game</title>
-    <style>
-        body {
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #000;
-        }
-        canvas {
-            border: 2px solid white;
-        }
-    </style>
+	<link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-    <canvas id="gameCanvas"></canvas>
-    <script src="entities.js"></script>
-    <script src="game.js"></script>
-</body>
-</html>
+<style>
+	body {
+		background: black;
+		margin: 0;
+	}
+</style>
+<div class="fixed text-white" style="width: 20vw; margin: 1%;">
+	<span class="pad">Score: </span><span class="pad" id="score">0</span>
+</div>
+<div class="fixed flex items-center popup" id="popup">
+	<h1 id="popup-score">0</h1>
+	<p>Points</p>
+	<div class="button items-center" id="start-game-button">
+		<div>Start Game</div>
+	</div>
+</div>
+<canvas> </canvas>
+<script src="index.js"></script>
