@@ -1,21 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Shooter</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-	body {
-		background: black;
-		margin: 0;
-	}
-</style>
-<div class="fixed text-white" style="width: 20vw; margin: 1%;">
-	<span class="pad">Score: </span><span class="pad" id="score">0</span>
-</div>
-<div class="fixed flex items-center popup" id="popup">
-	<h1 id="popup-score">0</h1>
-	<p>Points</p>
-	<div class="button items-center" id="start-game-button">
-		<div>Start Game</div>
-	</div>
-</div>
-<canvas> </canvas>
-<script src="index.js"></script>
+<body>
+    <div class="score-display">
+        <span>Score: </span><span id="score">0</span>
+    </div>
+    
+    <div class="popup" id="popup">
+        <h1 id="popup-score">0</h1>
+        <p>Points</p>
+        <div class="button" id="start-game-button">
+            Start Game
+        </div>
+    </div>
+    
+    <canvas></canvas>
+    
+    <script type="module" src="game.js"></script>
+</body>
+</html>
